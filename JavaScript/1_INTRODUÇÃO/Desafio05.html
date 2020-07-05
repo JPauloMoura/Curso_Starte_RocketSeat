@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 05</title>
+</head>
+<body>
+    <script>
+        var usuarios = [
+            {
+                Nome: "Diego",
+                Habilidades: ["Javascript","React.js","Redux"]
+            },
+            {
+                Nome: "Gabriel",
+                Habilidades: ["vueJs","Ruby on Rails", "Elixir"]
+            }
+        ];
+
+
+        function infoUser(usuarios){
+
+            for (let item of usuarios) {
+                console.log(`O ${item.Nome} possui as seguintes habilidades: ${item.Habilidades.join(', ')}.`);
+            }
+
+        }
+        
+
+    </script>
+    
+</body>
+</html>

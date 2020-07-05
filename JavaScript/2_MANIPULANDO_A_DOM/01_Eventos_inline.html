@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EVENTOS INLINE</title>
+</head>
+<body>
+    <div id="botao">
+        <button onclick="msg()">Clique aqui!</button>
+    </div>
+    
+    <div id="texto">
+        <!--caixa de texto|  quando pressiona tecla chama a função-->
+        <input onkeypress="msg2()">
+    </div>
+     
+
+
+    <script>
+        function msg(){
+            alert('O Botão foi clicado!');
+        }
+
+        function msg2(){
+            alert('tecla Precionada!');
+        }
+    </script>
+    
+</body>
+</html>

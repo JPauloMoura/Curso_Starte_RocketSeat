@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LIDANDO COM ELEMENTOS</title>
+</head>
+<body>
+    <div id="app">
+        <!--esse input sera removido na linha 40-->
+        <input id='nome'/>
+
+    </div>
+    
+    <script>
+        //criando um elemento link (.createElement) com a teg <a> ('a')
+        var elementLink = document.createElement('a');
+
+        //adiciona um atributo ao elemento -> .setAttribute('nome', 'valor')
+        elementLink.setAttribute('href', 'https://rocketseat.com.br/');
+        elementLink.setAttribute('title', 'site da rocketseate');
+
+        // criando um nó de texto no documento para guarda o elemento criado acima
+        var elementTexto = document.createTextNode('Acessar');
+
+        //anexando o (elementTexto) como um filho do (elementLink)    
+        elementLink.appendChild(elementTexto);
+
+        //selecionando o elemento da div#app
+        var elementConteiner = document.querySelector('#app');
+
+        //anexando o (elementLink) como um filho do (elemenConteiner)    
+        elementConteiner.appendChild(elementLink);
+        
+        //selecionando o elemento da div#nome
+        var elementInput = document.querySelector('#nome');
+
+        //removendo o elementInput do meu elementConteiner
+        elementConteiner.removeChild(elementInput);
+    </script>
+</body>
+</html>

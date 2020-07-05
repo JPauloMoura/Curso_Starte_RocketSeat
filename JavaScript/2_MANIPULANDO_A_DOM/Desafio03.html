@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 03</title>
+</head>
+<body>
+    <ul id="lista"></ul>
+
+ <script>
+
+    var nomes = ["Diego", "Gabriel", "Lucas","joao", "francisco"];
+    
+    var elementTagUl = document.getElementById('lista');
+    var lista = [];
+
+    for(var i=0; i<nomes.length; i++){
+        lista.push(document.createElement('li'));
+        elementTagUl.appendChild(lista[i])
+        lista[i].innerHTML = nomes[i];
+    }
+
+ </script>   
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TRABALHANDO COM A DOM</title>
+</head>
+<body>
+    <p>Digite seu nome</p>
+    <div id='app'>
+        <input type="text" name="nome" id="nome">
+        <button class="botao">Adiciona</button>
+    </div>
+
+    <script>
+        /*
+        BUSCA ELEMENTO PELO id-> document.getElementById('nome');
+
+        BUSCA ELEMENTOS PELA TAG-> document.getElemetsByTagName('nome')
+
+        BUSCA ELEMENTO PELA CLASS-> .getElementsByClassName('nome')
+
+        obs: como pode haver varias tags e class, usamos o numero de indice no final
+            ('nome')[1];
+
+        BUSCANDO POR QUALQUER ELEMENTO
+        .querySelector('caminho na arvore DOM')
+
+        ex:
+        .querySelector('body div#app' input) -> caminho separado por espaço, 'body' pode ser omitido
+        .querySelector('input[name=nome]')  -> referenciando a propriedade de um elemento
+        .querySelector('input')             ->retorna apenas 1 elemento, mesmo tendo varios
+        .querySelectorAll('input')          -> retorna todos os elementos na forma de um vertor
+        */
+
+        //Selecionando os elementos da DOM:
+        var elementInput = document.querySelector('input[name=nome]');
+        var elementButton = document.querySelector('button.botao');
+
+        //quando o elemento(Botao) for clicado(.onclick) dispara a funcao:
+        elementButton.onclick = function(){
+            // guardo o Valor do meu elemento(elementInput) numa variavel
+            var text = elementInput.value;
+            alert(`Bem vindo ${text}!`);
+        }        
+    </script>
+    
+</body>
+</html>

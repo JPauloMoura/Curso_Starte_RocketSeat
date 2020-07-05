@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio o1</title>
+</head>
+<body>
+        <div id="botao">
+            <button id="criar">Criar quadrado</button>
+        </div>
+
+    <div id="resultado">
+        
+    </div>
+
+    <script>
+        var bntCriar = document.querySelector('#criar');
+        bntCriar.onclick = function(){
+            var quadrado = document.createElement('div');
+            quadrado.setAttribute('class','box');
+            var resultado = document.querySelector('#resultado');
+            resultado.appendChild(quadrado);
+
+            quadrado.style.background = '#f00';
+            quadrado.style.width = '100px';
+            quadrado.style.height = '100px';
+            quadrado.style.margin = '20px';
+
+        }
+        
+       
+
+    </script>
+    
+</body>
+</html>

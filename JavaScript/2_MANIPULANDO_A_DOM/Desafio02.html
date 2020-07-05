@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 02</title>
+</head>
+
+<body>
+
+    <div id="botao">
+        <button id="criar">Criar quadrado</button>
+    </div>
+
+    <div id="resultado">
+
+    </div>
+
+    <script>
+        var bntCriar = document.querySelector('#criar');
+
+        bntCriar.onclick = function () {
+            var quadrado = document.createElement('div');
+            var resultado = document.querySelector('#resultado');
+            resultado.appendChild(quadrado);
+
+            quadrado.style.background = '#f00';
+            quadrado.style.width = '100px';
+            quadrado.style.height = '100px';
+            quadrado.style.margin = '20px';
+
+            quadrado.onmouseover = function(){
+                quadrado.style.background = getRandomColor();
+            }
+
+        }
+
+        function getRandomColor() {
+            var letters = "0123456789ABCDEF";
+            var color = "#";
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+       
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>
