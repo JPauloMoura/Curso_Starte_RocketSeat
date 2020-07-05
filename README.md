@@ -1,2 +1,4 @@
-# Es6_Starte_RocketSeat
-Exercicios do Curso Starte JavaScript ES6 da RocketSeat
+# Starte_RocketSeat
+Exercicios do Curso Starte JavaScript da RocketSeat
+-Curso JavaScript
+-Curso ES6
