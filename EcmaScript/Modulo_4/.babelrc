@@ -1,0 +1,8 @@
+{ //responsavel por converter o codigo numa forma que os
+    //navegadores entendam
+    "presets": ["@babel/preset-env"],
+    "plugins": [
+        "@babel/plugin-proposal-object-rest-spread",
+        "@babel/plugin-transform-async-to-generator"
+    ]
+}
